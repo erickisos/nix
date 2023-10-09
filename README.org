@@ -1,2 +1,4 @@
-# Nix Config (macOS)
+* Nix Config (macOS)
 
+This is my personal config for macOS in nix.
+It depends on the pre-existing erickisos/dotfiles repository, and all the files are organized inside the home.nix config file.

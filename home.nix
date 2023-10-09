@@ -6,7 +6,10 @@ in {
     ./programs/cli.nix
     ./programs/clojure.nix
     ./programs/git.nix
+    ./programs/rust.nix
     ./programs/zsh.nix
+    ./programs/vim.nix
+    ./programs/vscode.nix
   ];
 
   home.username = "erickisos";

@@ -2,9 +2,10 @@
 let dotfilesDir = "./.dotfiles";
 in {
   imports = [
-    # ./programs/emacs.nix
+    ./programs/emacs.nix
     ./programs/cli.nix
     ./programs/clojure.nix
+    ./programs/cpp.nix
     ./programs/git.nix
     ./programs/rust.nix
     ./programs/zsh.nix

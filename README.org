@@ -2,3 +2,16 @@
 
 This is my personal config for macOS in nix.
 It depends on the pre-existing erickisos/dotfiles repository, and all the files are organized inside the home.nix config file.
+
+** Installation
+
+Some of the following steps are mentioned in the [official documentation](https://nix-community.github.io/home-manager/index.html#ch-installation).
+
+1. Clone this repository, the current expected folder is `~/.config/home-manager`
+2. Install nix by running the command `curl -L https://nixos.org/nix/install | sh`, this will create a volume for your nix versions.
+3. Create the nix config folder by running `mkdir -p ~/.config/nix`
+3. Enable nix-command and flakes by running `echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf`
+3. Add the home manager channel by running `nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager`
+4. Update the channel by running `nix-channel --update`
+5. Install home manager by running `nix-shell '<home-manager>' -A install`
+6. Run `home-manager switch` to apply the configuration

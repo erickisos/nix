@@ -20,6 +20,7 @@
     nodejs
     opencv
     ripgrep
+    tmux
     tree
     unrar
     unzip

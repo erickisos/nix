@@ -4,6 +4,7 @@ in {
   imports = [
     ./programs/emacs.nix
     ./programs/cli.nix
+    ./programs/clisp.nix
     ./programs/clojure.nix
     ./programs/cpp.nix
     ./programs/git.nix

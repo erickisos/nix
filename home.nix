@@ -22,6 +22,8 @@ in {
   home.packages = [
     pkgs.bashInteractive
     pkgs.nixpkgs-fmt
+    # pkgs.freecad
+    # pkgs.kicad
   ];
 
   nixpkgs.config.allowUnfree = true;

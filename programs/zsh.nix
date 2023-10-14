@@ -5,7 +5,13 @@
     enable = true;
     enableCompletion = true;
     shellAliases = {
+      ls = "ls --color=auto";
       ll = "ls -lah";
+      dir = "dir --color=auto";
+      vdir = "vdir --color=auto";
+      grep = "grep --color=auto";
+      fgrep = "fgrep --color=auto";
+      egrep = "egrep --color=auto";
       update = "sudo nixos-rebuild switch";
     };
     oh-my-zsh = {

@@ -10,9 +10,10 @@ in {
     ./programs/git.nix
     ./programs/python.nix
     ./programs/rust.nix
-    ./programs/zsh.nix
+    ./programs/text.nix
     ./programs/vim.nix
     ./programs/vscode.nix
+    ./programs/zsh.nix
   ];
 
   home.username = "erickisos";

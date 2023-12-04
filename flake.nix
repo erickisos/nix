@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -10,15 +11,15 @@
   };
 
   outputs = { nixpkgs, home-manager, ... }: let
-    arch = "aarch64-darwin";
+      arch = "aarch64-darwin";
   in {
-    defaultPackage.${arch} =
-      home-manager.defaultPackage.${arch};
+      defaultPackage.${arch} =
+        home-manager.defaultPackage.${arch};
 
-    homeConfigurations.erickisos =
-      home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${arch};
-        modules = [ ./home.nix ];
-      };
+      homeConfigurations.erickisos =
+        home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.${arch};
+          modules = [ ./home.nix ];
+        };
     };
 }

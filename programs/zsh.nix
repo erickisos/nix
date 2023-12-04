@@ -1,5 +1,4 @@
 { config, lib, pkgs, ... }:
-
 {
   programs.zsh = {
     enable = true;
@@ -19,6 +18,9 @@
       plugins = [ "git" "sudo" "docker" "aws" "npm" ];
       theme = "simple";
     };
+    initExtra = ''
+      export PATH="$PATH:$HOME/.npm-packages/bin"
+    '';
     # extraConfig = builtins.readFile ../.dotfiles/.zshrc;
   };
 }

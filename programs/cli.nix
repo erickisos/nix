@@ -25,5 +25,16 @@
     unrar
     unzip
     wget
+
+    # Reorganize those dependencies.
+    gnuplot
+    vtk
+    plantuml
+    scala
+    tesseract
+    faust
+    guile
+    yarn
+    # libxext
   ];
 }

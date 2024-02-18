@@ -2,7 +2,9 @@
 {
   home.packages = with pkgs;
     [
-      rustup
+      cargo
+      rustc
+      rust-analyzer
       nodejs-18_x
       nodePackages.pnpm
       curl

@@ -20,6 +20,10 @@
     };
     initExtra = ''
       export PATH="$PATH:$HOME/.npm-packages/bin"
+
+      if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+      . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+      fi
     '';
     # extraConfig = builtins.readFile ../.dotfiles/.zshrc;
   };
